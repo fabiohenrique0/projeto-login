@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
@@ -24,17 +24,18 @@
                         <label for="iemail">
                             <span class="material-symbols-outlined">account_circle</span>
                         </label>
-                        <input type="email" name="email" id="iemail" placeholder="Seu e-mail" required>
+                        <input type="email" name="email" id="iemail" placeholder="Seu e-mail" autocomplete="email" required>
                     </fieldset>
 
                     <fieldset>
                         <label for="ipass">
                             <span class="material-symbols-outlined">password</span>
                         </label>
-                        <input type="password" name="pass" id="ipass" placeholder="Sua senha" minlength="8" required>
+                        <input type="password" name="pass" id="ipass" placeholder="Sua senha" minlength="8" autocomplete="current-password" required>
                     </fieldset>
 
-                    <input id="enviar" type="submit" value="Enviar">
+                    <input id="enviar" type="submit" value="Entrar">
+                    <a id="esqueci" href="#">Esqueci a senha <span class="material-symbols-outlined">mail</span></a>
                 </form>
             </div>
         </section>
